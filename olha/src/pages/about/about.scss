@@ -1,0 +1,14 @@
+@import '../../style/variables.module.scss';
+
+
+.info-box{
+    display: flex;
+    background-color: $primary-color;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 1cqw rgb(205, 197, 197)
+}
+.info-box img{
+    width: 200px;
+    height: 200px;
+}

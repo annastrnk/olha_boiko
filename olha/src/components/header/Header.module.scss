@@ -1,0 +1,44 @@
+// $primary-color: #82A0C4;
+// $secondary-color: #000000;
+// $background-color: #FFFFFF;
+
+@import '../../style/variables.module.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $primary-color ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: $background-color;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button {
+  background-color: $background-color; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+//   &:hover {
+//     background-color: $button-hover-color; // Трохи темніший червоний при наведенні
+//   }
+}
+
