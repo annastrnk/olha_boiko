@@ -7,14 +7,13 @@ export default function Header() {
   return(
     <header className="header-main">
       <div classNam="logo">
-      <NavLink to="/" >home</NavLink>
+      <NavLink to="/" >olha boiko</NavLink>
       </div>
       <nav className="header-nav">
         <NavLink to="/about">Про мене</NavLink>
         <NavLink to="/consultation"> Консультації</NavLink>
         <NavLink to="/courses">Курси</NavLink>
         <NavLink to="/articles">Корісні статті</NavLink>
-        <NavLink to="/contact">Контакти</NavLink>
       </nav>
       <div>
         <button>

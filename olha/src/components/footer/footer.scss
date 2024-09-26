@@ -1,0 +1,26 @@
+@import "../../style/variables.module.scss";
+
+.footer-wrapper{
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;  
+    color: $background-color;
+}
+
+
+.contact-info,
+.general-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  
+}
+.img-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}

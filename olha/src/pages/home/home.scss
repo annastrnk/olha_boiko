@@ -1,9 +1,14 @@
 .main-info{
     display: flex;
-    padding: 20px;
+	margin: 30px;
+    gap: 20px;
+	text-align: start;
 }
 
-
+.main-info img{
+	width: 350px;
+	height: 350px;
+}
 .services-wrapper{
     display: flex;
 	flex-direction: row;
@@ -12,5 +17,16 @@
 	align-items: center;
 	align-content: center;
     gap: 30px;
+}
+// .main-text{
+// 	line-height: 38px;
+// }
 
+.main-text span{
+	color:#5A7690;
+	letter-spacing: 2px;
+}
+
+.main-text a{
+	color: #5A7690;
 }

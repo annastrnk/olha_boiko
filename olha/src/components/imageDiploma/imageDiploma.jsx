@@ -7,6 +7,7 @@ import imageDiploma from "../../../public/imageDiploma.json"
 export default function ImageDiploma() {
   return (
     <Box sx={{ maxWidth:1200, maxHeigh: 300,  }}>
+      <h4 className='title'>Навчання</h4>
       <ImageList variant="masonry" cols={5} gap={8}>
         {imageDiploma.map((item) => (
           <ImageListItem key={item.img}>

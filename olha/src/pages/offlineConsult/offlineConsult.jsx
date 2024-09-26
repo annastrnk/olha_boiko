@@ -68,7 +68,10 @@ export default function OfflineConsultation() {
         </div>
       </div>
 
-      <button className="button-main">Записатись на консультацію</button>
+      <button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSezy_9ZUyf-ciWOQaIixui5nKyCkPId0OEGqB5VjHwUrS_sJg/viewform">Записатися на консультацію</a>
+        </button>
+    
     </>
   );
 }

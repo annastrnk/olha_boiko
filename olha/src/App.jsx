@@ -10,6 +10,8 @@ import AboutMe from "./pages/about/about";
 import Consultation from "./pages/consultation/consultation";
 import OnlineConsult from "./pages/onlineConsult/onlineConsult";
 import OfflineConsultation from "./pages/offlineConsult/offlineConsult";
+import Articles from "./pages/articles/articles";
+import Footer from "./components/footer/footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,8 +28,10 @@ function App() {
         <Route path="/consultation" element={<Consultation />} />
           <Route path="/consultation/online" element={<OnlineConsult />} />
           <Route path="/consultation/offline" element={<OfflineConsultation />} />
+        <Route path="/articles" element={<Articles/>} /> 
         <Route path="*" element={<p>page is not found</p>} />
       </Routes>
+      <Footer/>
     </>
   );
 }

@@ -5,8 +5,11 @@
     width: 275px;
     height: 150px;
     padding: 30px 40px;
+    transition: background-color 0.6s ease;
+    color: rgba(255, 255, 255, 0.886);
 }
 
 .services-item:hover{
     box-shadow: 0 4px 20px rgba(122, 119, 119, 0.877);
+    background-color: #5A7690;
 }
