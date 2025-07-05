@@ -1,0 +1,22 @@
+@import '../../style/variables.module.scss';
+
+
+.razom-rehab {
+    &-title {
+      font-size: 40px;
+      color: rgba(246, 211, 69);
+    }
+    &-text {
+      font-size: 26px;
+      padding: 20px 0;
+    }
+    &-accent {
+      color: rgba(246, 211, 69);
+      font-size: 32px;
+    }
+    &-btn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }

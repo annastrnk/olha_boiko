@@ -1,84 +1,9 @@
-import "./onlineConsult.scss";
+import ConsultationSection from "../../components/consultationSection/ConsultationSection";
+
+import { onlineConsultData } from '../../../public/onlineConsultData'
 
 export default function OnlineConsult() {
   return (
-    <>
-
-    <div className="online-consult-wrapper">
-      <div className="online-block">
-        <h4 className="online-title">Який є формат роботи?</h4>
-        <ul className="online-text">
-          <li>онлайн консультація </li>
-          <li>онлайн тренування (проте перед початком треба консультація)</li>
-        </ul>
-      </div>
-      <div className="online-block">
-        <h4 className="online-title">З якими запитами я працюю онлайн?</h4>
-        <ul className="online-text">
-          <li>тренування для жінок з різними особливостями в стані здоровʼя</li>
-          <li>
-            підготовка до вагітності, тренування під час вагітності й
-            відновлення після
-          </li>
-          <li>мʼязово-скелетні болі під час вагітності</li>
-          <li>пролапси, нетримання сечі</li>
-          <li>тазовий біль </li>
-          <li>хронічний біль</li>
-          <li> терапія й тренування для жінок в період менопаузи</li>
-          <li>профілактика проблем тазового дна</li>
-          <li>
-            інші запити повʼязані з жіночим здоровʼям і не тільки (можете
-            уточнити перед записом
-          </li>
-        </ul>
-      </div>
-      <div className="online-block">
-        <h4 className="online-title">Як відбувається онлайн консультація?</h4>
-        <ul className="online-text">
-          <li>заповнення анкети</li>
-          <li>зв'язок по відеозвʼязку в узгоджений день і час</li>
-          <li>консультация має 3 етапи</li>
-          <ol>
-            <li>говоримо про вашу проблему </li>
-            <li>тестування і огляд </li> 
-            <li> обгоорюємо можливий план дій</li>
-          </ol>
-          <li>в кінці ви отримуєте висновок з основними рекомендаціями</li>
-        </ul>
-      </div>
-      </div>
-
-
-      <div className="online-block-result">
-        <div className="result-text">
-          <p>Також у вас завжди є право вибору як продовжувати роботу: самостійно,
-          за моїм планом й супроводом чи зі мною на тренуваннях.</p>
-          <h4>В чому різниця?</h4>
-          
-          <p> Аналогія з картою</p>
-          <div className="online-options">
-        <p> Перший варіант - я вам вказую напрямок</p>
-        <p>Другий варіант - малюю покроковий шлях на певну дистанцію</p>
-        <p> Третій - йду разом з вами по маршруту.</p>
-          </div>
-         
-          
-         
-        </div>
-      </div>
-      <div className="online-block-result">
-        <p className="result-text">
-            <h4>   Який варіант найкраще?</h4>
-            <p>   Чесно, не знаю. Мала як пацієнток які класно працювали самі й здобули гарний результат, так і тих хто просто
-          пропускав наші заплановані тренування</p>
- 
-        </p>
-      </div>
-
-      <button>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSezy_9ZUyf-ciWOQaIixui5nKyCkPId0OEGqB5VjHwUrS_sJg/viewform">Записатися на консультацію</a>
-        </button>
-  
-    </>
+    <ConsultationSection {...onlineConsultData}/>
   );
 }

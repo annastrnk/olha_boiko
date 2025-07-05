@@ -1,14 +1,8 @@
-@import '../../style/variables.module.scss';
+@import "../../style/variables.module.scss";
 
-.info-photo{ 
-    width: 300px;
-    height: 350px;
-}
-.info-about{
-    display: flex;
-    gap: 30px;
-}
-
-.info-wrapper{
-    margin-top: 40px;
+.about-me{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px 0;
 }

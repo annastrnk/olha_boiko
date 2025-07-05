@@ -1,18 +1,17 @@
-import Feedbacks from "../../components/feedbacks/feedbacks";
-import ImageDiploma from "../../components/imageDiploma/imageDiploma";
+import BioBlock from "../../components/bioBlock/bioBlock";
+import RazomRehabBlock from "../../components/razomRehabBlock/razomRehabBlock";
+import WorkScope from "../../components/workScope/workScope";
+import CertificatesCarousel from "../../components/сertificatesCarousel/certificatesCarousel";
+import Feedbacks from "../../components/сertificatesCarousel/certificatesCarousel";
 import "./about.scss";
 
 export default function AboutMe() {
   return (
-    <div className="info-wrapper">
-      <div className="info-about">
-<img className="info-photo"  src="../../../public/images/Фото144_resized.jpg" alt="" />
-<div>
-  Щось напишемо цікаве
-</div>
-      </div>
-      <ImageDiploma />
-      <Feedbacks />
-    </div>
+    <section className="about-me">
+      <BioBlock/>
+      <RazomRehabBlock/>
+      <WorkScope/>
+      <CertificatesCarousel/>
+    </section>
   );
 }

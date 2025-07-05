@@ -1,0 +1,53 @@
+@import "../../style/variables.module.scss";
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 30px;
+  
+  &-item {
+    background-color: $background-color;
+   
+    cursor: pointer;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+  
+    &:hover,
+    &.active {
+      background-color: $primary-color; 
+      color: white;
+    }
+  }
+
+&-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+&-icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+&-content {
+  background-color: $background-color;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+&-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+  text-align: start;
+}
+}

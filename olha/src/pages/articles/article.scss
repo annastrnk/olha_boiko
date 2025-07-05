@@ -2,32 +2,33 @@
 
 .article-block {
   display: flex;
-  position: relative;
-  top: 0;
-  left: 0;
   margin: 40px;
+  border-radius: 20px;
 }
+
 .article-block img {
   width: 200px;
   height: 200px;
-  position: relative;
-  top: 0;
-  left: 0;
+
 }
 
 .article-text {
   background-color: $background-color;
-  position: absolute;
-  bottom: 16px;
-  left: 158px;
-  border-radius: 20px;
+ border-radius: 20px ;
+  padding: 0 0 20px;
 }
 
 .article-title {
   background-color: $primary-color;
-
-  padding: 10px;
+margin:0 0 20px;
+  padding: 20px;
+  border-radius: 20px 0 70px;
+  color: $background-color;
 }
 .article-description{
   width: 1000px;
+}
+
+.article-main{
+  display: flex;
 }

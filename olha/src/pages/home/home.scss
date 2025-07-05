@@ -1,32 +1,115 @@
+@import '../../style/variables.module.scss';
+
 .main-info{
     display: flex;
-	margin: 30px;
-    gap: 20px;
+    gap: 60px;
 	text-align: start;
 }
 
-.main-info img{
-	width: 350px;
-	height: 350px;
-}
-.services-wrapper{
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-    gap: 30px;
-}
-// .main-text{
-// 	line-height: 38px;
+// .main-photo{
+// 	width: 100%;
+// }
+// .main-info img{
+// 	width: 600px;
+// 	height: 600px;
+
+// }
+// .services-wrapper{
+//     display: flex;
+// 	flex-direction: row;
+// 	flex-wrap: wrap;
+// 	justify-content: center;
+// 	align-items: center;
+// 	align-content: center;
+//     gap: 30px;
+// 	margin-top: 20px;
+// }
+// // .main-text{
+// // 	line-height: 38px;
+// // }
+
+// .main-text span{
+// 	color:#5A7690;
+// 	letter-spacing: 2px;
 // }
 
-.main-text span{
-	color:#5A7690;
-	letter-spacing: 2px;
-}
+// .main-text a{
+// 	color: #5A7690;
+// }
 
-.main-text a{
-	color: #5A7690;
-}
+
+// .services-item{
+//     background-color:$primary-color;
+//     border-radius: 5px;
+//     box-shadow: 0 2px 4px rgba(152, 149, 149, 0.877);
+//     width: 275px;
+//     height: 150px;
+//     padding: 30px 40px;
+//     transition: background-color 0.6s ease;
+//     color: $background-color;
+// }
+
+// .services-item:hover{
+//     box-shadow: 0 4px 20px rgba(122, 119, 119, 0.877);
+//     background-color: $primary-color;
+// }
+
+// .main-photo{
+// 	display: flex;
+// 	justify-content: space-between;
+
+// 	padding-top: 20px;
+// 	gap: 30px;
+// 	align-items: center;
+// }
+
+// .main-photo_text{
+// 	display: flex;
+// 	flex-direction: column;
+// 	gap: 40px;
+// 	align-items: center;
+// 	justify-content: center;
+// }
+// .main-photo h3{
+// 	font-size: 60px;
+	
+// }
+// .main-home img:not(.main-numbers_desc img){
+// 	width: 400px;
+// 	box-shadow: 20px -20px 0 0 $primary-color;
+// }
+
+// .main-numbers{
+// 	display: flex;
+// 	justify-content: space-between;
+// 	color: $background-color;
+// 	background-color: $primary-color;
+// 	padding: 20px;
+// 	margin: 20px 0 40px;
+// }
+
+// .main-numbers_desc {
+// display: flex;
+// gap: 5px;
+// align-items: center;
+// }
+
+// @media screen and (min-width: 328px) and  (max-width:900px) {
+// 	.main-info{
+// 		display: block;
+// 	}
+// 	.main-info img{
+// 		width: 100px;
+// 		height: 100px;
+// 	}
+// 	.main-photo{
+// 		flex-wrap: wrap;
+// 	}
+// 	.main-photo img{
+// 		width: 330px;
+// 	}
+// 	.main-numbers{
+// 		display: block;
+// 	}
+
+// @media screen and (min-width: 768px) and (max-width: 1200px) {
