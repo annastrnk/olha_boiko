@@ -19,7 +19,7 @@ export default function RazomRehabBlock(){
             </p>
           </div>
           <div className="razom-rehab-btn">
-            <button>
+            <button className="btn-main">
               <a href="https://www.razomrehab.com.ua/">дізнатися більше</a>
             </button>
           </div>

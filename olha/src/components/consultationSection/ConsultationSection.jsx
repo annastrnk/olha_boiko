@@ -41,19 +41,21 @@ export default function ConsultationSection({
         </div>
       )}
   <div className="consultation-details accent-block">
-    
+     <div className="consultation-details-price">
       {duration && <p>Тривалість: {duration}</p>}
-    <div className="consultation-details-price">
+   
         {price && <span>{price}</span>}
-
+  </div>
         {formLink && (
-          <button>
+          <div className="consultation-details-btn">
+          <button className="btn-main">
             <a href={formLink} target="_blank" rel="noopener noreferrer">
               Записатися на консультацію
             </a>
           </button>
+          </div>
         )}
-        </div>
+      
       </div>
     </section>
   );

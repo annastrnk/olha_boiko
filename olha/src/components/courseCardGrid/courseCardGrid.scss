@@ -1,0 +1,61 @@
+@import "../../style/variables.module.scss";
+
+.course-goals {
+  background: linear-gradient(180deg, rgba(139, 171, 207, 0) 0%, #8babcf 100%);
+  padding: 40px 0;
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &-item {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 220px;
+    background-color: $background-color;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    &-img {
+      margin-bottom: 16px;
+
+      img {
+        max-width: 60px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 1.5;
+      color: $primary-color;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-item {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    &-item {
+      flex: 1 1 100%;
+    }
+  }
+}

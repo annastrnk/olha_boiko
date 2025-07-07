@@ -1,14 +1,24 @@
 import "./home.scss";
 
-
 export default function Home() {
-
-
   return (
-    <section className="container">
-
-
-<img className="main-photo" src="../../../public/images/main-photo.png" alt="main-photo" />
+    <section
+    // className="container"
+    >
+      <div className="home-page">
+        <div className="main-info">
+          <div className="main-info-title">
+            <h2 className="main-info-title-name"> Ольга Бойко</h2>
+            <p className="main-info-title-role">
+              Фізична терапевтка тазового дна
+            </p>
+          </div>
+          <div className="main-info-text">
+            <p>Більше 300 консультацій онлайн та офлайн</p>
+            <p>Засновниця платформи Разом Rehab</p>
+          </div>
+        </div>
+      </div>
       {/* <div className="main-home" >
         <div className="main-photo">
           <div className="main-photo_text">

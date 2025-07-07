@@ -2,7 +2,13 @@ import "./workScope.scss";
 
 export default function WorkScope() {
   return (
-    <div className="work-scope container">
+    <div className="work-scope container"> 
+    <div className="work-scope-img">
+      <img
+        src="..//../../public/images/work-scope.jpg"
+        alt="work-scope-img"
+      />
+      </div>
       <div className="work-scope-text">
         <h3 className="title">З чим я працюю</h3>
         <ul className="work-scope-list">
@@ -19,11 +25,7 @@ export default function WorkScope() {
           </li>
         </ul>
       </div>
-      <img
-        className="work-scope-img"
-        src="..//../../public/images/work-scope.jpg"
-        alt="work-scope-img"
-      />
+     
     </div>
   );
 }

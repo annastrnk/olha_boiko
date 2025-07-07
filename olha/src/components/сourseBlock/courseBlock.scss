@@ -1,0 +1,61 @@
+@import "../../style/variables.module.scss";
+
+.course-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin: 50px 0;
+
+  &.reversed {
+    flex-direction: row-reverse;
+  }
+
+  &-img {
+    flex: 1;
+    max-width: 100%;
+
+    img {
+      // width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  }
+
+  &-text {
+    flex: 1;
+
+    &-title {
+      color: $accent-color;
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    &-desc {
+      font-size: 16px;
+      line-height: 1.6;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &-text {
+      &-title {
+        font-size: 48px;
+        margin-bottom: 40px;
+      }
+
+      &-desc {
+        font-size: 20px;
+      }
+    }
+
+    &-img {
+      max-width: 400px;
+    }
+  }
+}

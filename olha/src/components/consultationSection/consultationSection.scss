@@ -1,53 +1,67 @@
 @import "../../style/variables.module.scss";
 
-.consultation{
+.consultation {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-block {
+    // display: flex;
+    gap: 20px;
+    background-color: $background-color;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px 10px;
+    box-shadow: 0 10px 1cqw rgb(137, 129, 129);
+  }
+  &-title {
+    background-color: $primary-color;
+    color: $background-color;
+    flex: 3;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-result {
 
-    &-wrapper{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    &-block{
-        display: flex;
-        gap: 20px;
-        background-color: $background-color;
-        margin: 20px;
-        padding: 20px;
-        border-radius: 30px 10px;
-        box-shadow: 0 10px 1cqw rgb(137, 129, 129)
-    }
-    &-title{
-        background-color: $primary-color;
-        color: $background-color;
-        width: 30%;
-        border-radius: 30px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    &-text{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    &-result{
-        // padding: 20px;
-        // border-radius: 70px;
-        line-height: 1.8;
-    }
-    &-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 24px;
-        border-radius: 30px;
+  }
 
-        &-price{
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
+  &-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    &-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }   
+      &-btn {
+        display: flex;
+        justify-content: center;
+      }
+  }
+  @media screen and (min-width: 1024px) {
+    &-block {
+      display: flex;
     }
+    &-title {
+      padding: 5px;
+    }
+    &-details {
+ 
+    }
+  }
 }

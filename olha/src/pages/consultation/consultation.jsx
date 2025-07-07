@@ -5,21 +5,25 @@ import { NavLink } from "react-router-dom";
 
 export default function Consultation() {
   return (
-    <section className="container">
+    <section className="consult container">
       <div className="consult-wrapper">
-        <div className="online-cons">
+        <div className="consult-wrapper-online">
           <img src="../../../public/images/Фото131_resized.jpg" alt="" />
           <h2>Онлайн консультації </h2>
+          <button className="btn-main">
           <NavLink to="/consultation/online" className="learn-more">
             Дізнатись більше
           </NavLink>
+          </button>
         </div>
-        <div className="offline-cons">
+        <div className="consult-wrapper-offline">
           <img src="../../../public/images/Фото162_resized.jpg" alt="" />
           <h2>Очні консультації</h2>
+          <button className="btn-main">
           <NavLink to="/consultation/offline" className="learn-more">
             Дізнатись більше
           </NavLink>
+          </button>
         </div>
       </div>
       <ConsultationRules />

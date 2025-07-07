@@ -1,0 +1,78 @@
+@import "../../style//variables.module.scss";
+.course-main {
+  background-image: url(../../../public/images//main-course.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: calc(100vh - 140px);
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //   padding: 20px 0;
+
+    min-height: calc(100vh - 140px);
+  }
+  &-title {
+    color: $background-color;
+    font-size: 22px;
+  }
+  &-subtopic {
+    font-size: 22px;
+  }
+  &-text {
+    color: $accent-color;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &-wrapper {
+      padding: 60px;
+
+      //  min-height: calc(100vh - 140px);
+    }
+    &-title {
+      font-size: 48px;
+    }
+    &-subtopic {
+      font-size: 48px;
+    }
+    &-text {
+      font-size: 40px;
+    }
+  }
+}
+
+.course-conclusion {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  &-text {
+    margin: 110px;
+    padding: 50px;
+    background-color: $background-color;
+    &-accent {
+      color: $accent-color;
+    }
+  }
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+.btn-buy{
+  margin: 50px 0;
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .btn-buy{
+    margin: 50px 0;
+    font-size: 40px;
+  }
+}
+}

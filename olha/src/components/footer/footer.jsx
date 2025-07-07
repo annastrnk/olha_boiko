@@ -5,28 +5,24 @@ export default function Footer() {
   return (
     <div className="footer-wrapper">
       <div className="contact-info">
-        <a href="#" className="img-wrapper">
-          <img src="../../../public/images/icons8-instagram-20.png" alt="" />
-          Instagram
+        <a href="https://www.instagram.com/olha_boiko?igsh=azc4OG5wdWpwc3hk" >
+          <img src="../../../public/images/icons8-instagram-75.png" alt="" />
         </a>
 
-        <a href="#" className="img-wrapper">
-          <img src="../../../public/images/icons8-telegram-20.png" alt="" />
-          Telegram
+        <a href="https://t.me/tazove_dno_vuno_i_tereveni" >
+          <img src="../../../public/images/icons8-telegram-75.png" alt="" />
         </a>
 
-        <a href="mailto:someone@yoursite.com" className="img-wrapper">
-          <img src="../../../public/images/icons8-mail-20.png" alt="" />
-          Email
+        <a href="mailto:someone@yoursite.com" >
+          <img src="../../../public/images/icons8-mail-75.png" alt="" />
         </a>
       </div>
       <div>
         <a href="https://www.razomrehab.com.ua/links">Rasom Rehub</a>
       </div>
       <div className="general-info">
-        <a href="#">Політика конфіденційності</a>
-        <a href="#">Договір публічної оферти</a>
-        <NavLink to="/faq">Часто задавані питання</NavLink>
+        <a href="#">Умови надання послуг</a>
+        <a href="#">Юридична інформація</a>
         
       </div>
     </div>

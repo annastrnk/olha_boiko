@@ -1,20 +1,85 @@
-@import '../../style/variables.module.scss';
+@import "../../style/variables.module.scss";
 
 .bio-block {
-    display: flex;
-    gap: 60px;
   &-img {
-      width: 300px;
-      height: 350px;
-      box-shadow: 20px -20px 0 0 $primary-color;
-    }
-    &-text {
-      flex: 1;
-      line-height: 1.8;
-  
-      p {
-        margin-bottom: 1rem;
-      }
+    float: left;
+    width: 40%;
+    max-width: 150px;
+    margin-right: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+      box-shadow: 10px -10px 0 0 $primary-color;
+      display: block;
+     
     }
   }
-  
+
+  &-text {
+    line-height: 1.8;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 60px;
+
+    &-img {
+      float: none;
+      flex: 4;
+      max-width: 100%;
+      margin: 0;
+
+      img {
+        box-shadow: 20px -20px 0 0 $primary-color;
+      }
+    }
+
+   &-text {
+      flex: 6;
+      overflow: visible; 
+    }
+  }
+}
+
+// .bio-block {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 40px;
+//   &-img {
+//     flex: 0 0 30%;
+//     max-width: 30%;
+
+//     img {
+//       width: 100%;
+//       height: auto;
+//       box-shadow: 20px -20px 0 0 $primary-color;
+//     }
+//   }
+//   &-text {
+//     flex: 1 1 65%;
+//     line-height: 1.8;
+
+//     p {
+//       margin-bottom: 1rem;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .bio-block {
+//     gap: 60px;
+
+//     .bio-block-img {
+//       order: 0;
+//       max-width: 100%;
+//       flex: 4;
+//     }
+//     .bio-block-text {
+//       order: 1;
+//     }
+//   }
+// }

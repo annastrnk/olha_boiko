@@ -1,34 +1,49 @@
 @import "../../style/variables.module.scss";
 
-.article-block {
+.article-wrapper {
   display: flex;
-  margin: 40px;
-  border-radius: 20px;
-}
-
-.article-block img {
-  width: 200px;
-  height: 200px;
-
-}
-
-.article-text {
-  background-color: $background-color;
- border-radius: 20px ;
-  padding: 0 0 20px;
-}
-
-.article-title {
+  flex-direction: column;
+  gap: 30px;
   background-color: $primary-color;
-margin:0 0 20px;
-  padding: 20px;
-  border-radius: 20px 0 70px;
-  color: $background-color;
-}
-.article-description{
-  width: 1000px;
-}
+  padding: 60px;
 
-.article-main{
-  display: flex;
+  .article-item {
+    display: flex;
+    background-color: $background-color;
+    color: $primary-color;
+    border-radius: 16px;
+    &-img {
+      flex: 1;
+      img {
+        border-radius: 16px 16px 0 0;
+      }
+    }
+    &-text {
+      flex: 1;
+      padding: 45px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-title {
+        padding-bottom: 25px;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .article-item {
+      display: block;
+      flex: 1 1 calc(33.333% - 20px);
+
+      &-text {
+        &-title {
+          font-size: 26px;
+        }
+      }
+    }
+  }
 }

@@ -2,7 +2,6 @@ import { useState } from "react";
 import NavLinks from "./navLinks";
 import { MdOutlineMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
-import { NavLink } from "react-router-dom";
 
 export default function MobileHeader() {
   const [click, setClick] = useState(false);
