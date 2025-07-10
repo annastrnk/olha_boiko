@@ -4,7 +4,7 @@ export default function BioBlock() {
   return (
     <div className="bio-block container">
       <div className="bio-block-img">
-        <img src="../../../public/images/Фото144_resized.jpg" alt="" />
+        <img src="/images/Фото144_resized.jpg" alt="" />
       </div>
       <div className="bio-block-text">
         <p> Магістр фізичної терапії</p>

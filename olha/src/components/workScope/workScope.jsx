@@ -5,7 +5,7 @@ export default function WorkScope() {
     <div className="work-scope container"> 
     <div className="work-scope-img">
       <img
-        src="..//../../public/images/work-scope.jpg"
+        src="/images/work-scope.jpg"
         alt="work-scope-img"
       />
       </div>

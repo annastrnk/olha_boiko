@@ -6,15 +6,15 @@ export default function Footer() {
     <div className="footer-wrapper">
       <div className="contact-info">
         <a href="https://www.instagram.com/olha_boiko?igsh=azc4OG5wdWpwc3hk" >
-          <img src="../../../public/images/icons8-instagram-75.png" alt="" />
+          <img src="/images/icons8-instagram-75.png" alt="" />
         </a>
 
         <a href="https://t.me/tazove_dno_vuno_i_tereveni" >
-          <img src="../../../public/images/icons8-telegram-75.png" alt="" />
+          <img src="/images/icons8-telegram-75.png" alt="" />
         </a>
 
         <a href="mailto:someone@yoursite.com" >
-          <img src="../../../public/images/icons8-mail-75.png" alt="" />
+          <img src="/images/icons8-mail-75.png" alt="" />
         </a>
       </div>
       <div>

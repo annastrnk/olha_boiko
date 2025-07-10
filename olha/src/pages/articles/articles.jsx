@@ -16,7 +16,7 @@ export default function Articles() {
       <div className="article-wrapper">
         <div className="article-item">
           <div className="article-item-img">
-            <img src="../../../public/images/Фото152.jpg" alt="" />
+            <img src="/images/Фото152.jpg" alt="" />
           </div>
 
           <div className="article-item-text">
@@ -30,7 +30,7 @@ export default function Articles() {
         </div>
         <div className="article-item">
           <div className="article-item-img">
-            <img src="../../../public/images/Фото152.jpg" alt="" />
+            <img src="/images/Фото152.jpg" alt="" />
           </div>
           <div className="article-item-text">
             <h3 className="article-item-text-title">
@@ -43,7 +43,7 @@ export default function Articles() {
         </div>
         <div className="article-item">
           <div className="article-item-img">
-            <img src="../../../public/images/Фото152.jpg" alt="" />
+            <img src="/images/Фото152.jpg" alt="" />
           </div>
           <div className="article-item-text">
             <h3 className="article-item-text-title">
@@ -54,29 +54,6 @@ export default function Articles() {
             </button>
           </div>
         </div>
-
-        {/* {articles.map((item) => (
-        <div key={item.id} className="article-block">
-       
-          <div className="article-text">
-            <p className="article-title">{item.title}</p>   
-            <div className="article-main">
-            <img src="../../../public/images/Фото131_resized.jpg" alt="" />
-            <div>
-              <p className="article-description">
-              {expanded[item.id]
-                ? item.description
-                : `${item.description.substring(0, 250)}...`}
-            </p>
-            <button onClick={() => toggleShowMore(item.id)}>
-              {expanded[item.id] ? "Show less" : "Show more"}
-            </button>
-            </div>
-            
-            </div>
-          </div>
-        </div>
-      ))} */}
       </div>
     </section>
   );

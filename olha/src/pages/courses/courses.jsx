@@ -24,7 +24,7 @@ export default function Courses() {
       <div className="container">
         <CourseBlock
           title="ЩО ТИ ОТРИМАЄШ:"
-          imgSrc="../../../public/images/course1.jpg"
+          imgSrc="/images/course1.jpg"
           items={[
             "5 відеоуроків у записі",
             "PDF-конспекти до кожного уроку",
@@ -38,19 +38,19 @@ export default function Courses() {
         cards={[
           {
             text: "Визначати симптоми слабкості або перенапруги м'язів тазового дна",
-            img: "../../../public/images/Фото7_resized.jpg",
+            img: "/images/Фото7_resized.jpg",
           },
           {
             text: "Розпізнавати сигнали дисбалансу",
-            img: "../../../public/images/Фото82_resized.jpg",
+            img: "/images/Фото82_resized.jpg",
           },
           {
             text: "Розуміти, чи є потреба у зміцненні м'язів",
-            img: "../../../public/images/Фото86_resized.jpg",
+            img: "/images/Фото86_resized.jpg",
           },
           {
             text: "Чітко бачити — коли варто звернутись до фахівця, а коли достатньо самодопомоги",
-            img: "../../../public/images/Фото95_resized.jpg",
+            img: "/images/Фото95_resized.jpg",
           },
         ]}
       />
@@ -58,7 +58,7 @@ export default function Courses() {
       <div className="container">
         <CourseBlock
           title="ДЛЯ КОГО ЦЕЙ КУРС"
-          imgSrc="../../../public/images/course2.jpg"
+          imgSrc="/images/course2.jpg"
           isReversed={true}
           items={[
             "Для жінок, які хочуть турбуватись про своє тіло усвідомлено",
@@ -72,7 +72,7 @@ export default function Courses() {
         <CourseBlock
           title="РЕЗУЛЬТАТ"
           isReversed={false}
-          imgSrc="../../../public/images/course3.jpg"
+          imgSrc="/images/course3.jpg"
           items={[
             "Розуміння свого тіла",
             "Чіткий план дій",

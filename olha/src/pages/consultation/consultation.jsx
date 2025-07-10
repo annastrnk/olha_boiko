@@ -8,7 +8,7 @@ export default function Consultation() {
     <section className="consult container">
       <div className="consult-wrapper">
         <div className="consult-wrapper-online">
-          <img src="../../../public/images/Фото131_resized.jpg" alt="" />
+          <img src="/images/Фото131_resized.jpg" alt="" />
           <h2>Онлайн консультації </h2>
           <button className="btn-main">
           <NavLink to="/consultation/online" className="learn-more">
@@ -17,7 +17,7 @@ export default function Consultation() {
           </button>
         </div>
         <div className="consult-wrapper-offline">
-          <img src="../../../public/images/Фото162_resized.jpg" alt="" />
+          <img src="/images/Фото162_resized.jpg" alt="" />
           <h2>Очні консультації</h2>
           <button className="btn-main">
           <NavLink to="/consultation/offline" className="learn-more">
