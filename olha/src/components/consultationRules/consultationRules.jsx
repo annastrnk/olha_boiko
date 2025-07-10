@@ -1,9 +1,10 @@
 import ConsultationRuleItem from "../consultationRuleItem/consultationRuleItem";
+import './consultationRules.scss';
 
 export default function ConsultationRules() {
     
     return(
-        <div>
+        <div className="consult-rules-wrapper">
         <ConsultationRuleItem
           title="Загальні рекомендації"
           content="

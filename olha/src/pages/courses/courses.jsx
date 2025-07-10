@@ -38,19 +38,19 @@ export default function Courses() {
         cards={[
           {
             text: "Визначати симптоми слабкості або перенапруги м'язів тазового дна",
-            img: "#",
+            img: "../../../public/images/Фото7_resized.jpg",
           },
           {
             text: "Розпізнавати сигнали дисбалансу",
-            img: "#",
+            img: "../../../public/images/Фото82_resized.jpg",
           },
           {
             text: "Розуміти, чи є потреба у зміцненні м'язів",
-            img: "#",
+            img: "../../../public/images/Фото86_resized.jpg",
           },
           {
             text: "Чітко бачити — коли варто звернутись до фахівця, а коли достатньо самодопомоги",
-            img: "#",
+            img: "../../../public/images/Фото95_resized.jpg",
           },
         ]}
       />

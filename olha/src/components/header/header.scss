@@ -1,118 +1,29 @@
 @import "../../style/variables.module.scss";
 
-.header-main {
+.hidden {
+  transform: translateY(-100%);
+}
+
+.visible {
+  transform: translateY(0);
+}
+
+.header-wrapper {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 1000;
-  width: 100vw;
-  height: 100vh;
+  transition: transform 0.3s ease;
   background-color: $primary-color;
   color: $background-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 40px 20px;
-
-  &-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    font-size: 24px;
-  }
-
-  &-logo {
-    font-size: 28px;
-    font-weight: bold;
-
-    a {
-      color: $background-color;
-      text-decoration: none;
-    }
-  }
 }
 
-.nav-link {
-  position: relative;
-  color: $background-color;
-  text-decoration: none;
-  transition: color 0.3s;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: $background-color;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s;
-  }
-
-  &:hover::after,
-  &.active::after {
-    width: 100%;
-  }
-}
-
-.hamburgerMenu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1010;
-  cursor: pointer;
-}
-
-.mobileNavigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 20px;
-  background-color: $primary-color;
-  color: $background-color;
-  z-index: 1010;
-  position: relative;
-}
-
-.desktopNavigation {
-  display: none;
+.logo {
+  font-size: 28px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) {
-  .mobileNavigation {
-    display: none;
-  }
 
-  .desktopNavigation {
-    display: flex;
-  }
-
-  .header-main {
-    position: static;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    height: auto;
-
-    &-nav {
-      flex-direction: row;
-      font-size: 24px;
-    }
-
-    &-logo {
-      font-size: 24px;
-
-      a {
-        color: $background-color;
-      }
-    }
-  }
-
-  .btn-main {
-    margin-top: 0;
-  }
 }
